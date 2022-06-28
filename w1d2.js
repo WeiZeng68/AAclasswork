@@ -5,13 +5,18 @@
 
 // console.log(isOdd(9));
 
- function isOdd(num) {
+  function isOdd(num) {
     if (num % 2 !== 0)
-   return true;
-  else
-  return false; 
- }
+    return true;
+    else
+    return false; 
+  }
 
+ function isEven(num){
+    return !isOdd(num);
+ } 
+
+ console.log(isEven(2));
 // console.log(isOdd(9));
 // //
 // function plusFive(num) {
@@ -50,10 +55,21 @@
 //   }
 
 
-function averageOfFour(num1, num2, num3, num4){
-    let sum = num1 + num2 + num3 + num4;
-    let avg = sum / 4;
-    return avg;
-}
+// function averageOfFour(num1, num2, num3, num4){
+//     let sum = num1 + num2 + num3 + num4;
+//     let avg = sum / 4;
+//     return avg;
+// }
 
-console.log(averageOfFour(1,2,3,4));
+// console.log(averageOfFour(1,2,3,4));
+
+// function isEven(num) {
+//      if (num % 2 === 0)
+//     return true;
+//   else
+//    return false; 
+//   }
+
+//   console.log(isEven(2));
+
+
