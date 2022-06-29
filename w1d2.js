@@ -82,19 +82,24 @@
 // console.log(echo("echo"));
 
 // function isSubstring(searchString, subString) {
-//      return searchString.indexOf(subString) > -1;
+//      return searchString.toLowerCase.indexOf(subString) > -1;
 //   }
 
 // console.log(isSubstring("Yahoo","oo"));
 
-function isSubstring(searchString, subString) {
-    if (searchString.toLowerCase().indexOf(subString) > -1){
-    return true; 
-    } else {
-    return false;
-    }
- }
+// function isSubstring(searchString, subString) {
+//     if (searchString.toLowerCase().indexOf(subString) > -1){
+//     return true; 
+//     } else {
+//     return false;
+//     }
+//  }
 
-console.log(isSubstring("The cat went to the store", "he cat went")); // => true
-console.log(isSubstring("Time to program", "time")); // => true
-console.log(isSubstring("Jump for joy", "joys")); // => false 
+// console.log(isSubstring("The cat went to the store", "he cat went")); // => true
+// console.log(isSubstring("Time to program", "time")); // => true
+// console.log(isSubstring("Jump for joy", "joys")); // => false 
+
+for (var i = 21; i < 20; i -=2) {
+    console.log(i);
+  }
+
