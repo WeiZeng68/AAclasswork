@@ -5,18 +5,19 @@
 
 // console.log(isOdd(9));
 
-  function isOdd(num) {
-    if (num % 2 !== 0)
-    return true;
-    else
-    return false; 
-  }
+//   function isOdd(num) {
+//     if (num % 2 !== 0)
+//     return true;
+//     else
+//     return false; 
+//   }
 
- function isEven(num){
-    return !isOdd(num);
- } 
+//  function isEven(num){
+//     return !isOdd(num);
+//  } 
 
- console.log(isEven(2));
+//  console.log(isEven(2));
+
 // console.log(isOdd(9));
 // //
 // function plusFive(num) {
@@ -72,4 +73,28 @@
 
 //   console.log(isEven(2));
 
+// function echo(str) {
+//     let toUpper = str.toUpperCase();
+//     let toLower = str.toLowerCase();
+//     return toUpper + "..." + str + "..." + toLower;
+//   }
 
+// console.log(echo("echo"));
+
+// function isSubstring(searchString, subString) {
+//      return searchString.indexOf(subString) > -1;
+//   }
+
+// console.log(isSubstring("Yahoo","oo"));
+
+function isSubstring(searchString, subString) {
+    if (searchString.toLowerCase().indexOf(subString) > -1){
+    return true; 
+    } else {
+    return false;
+    }
+ }
+
+console.log(isSubstring("The cat went to the store", "he cat went")); // => true
+console.log(isSubstring("Time to program", "time")); // => true
+console.log(isSubstring("Jump for joy", "joys")); // => false 
