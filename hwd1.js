@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // console.log(true && !(false || false));
 // console.log(!true && !(false || false));
 // console.log('cat' + 'dog');
@@ -19,3 +20,5 @@
 // console.log('bootcamp'.indexOf('T'));
 
 console.log(2 + 2);
+=======
+>>>>>>> 5d0d332c9721bdd91c2a7c00de5fe4b2fa486d35

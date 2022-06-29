@@ -22,7 +22,6 @@
 
 // Write a function `printFives(max)` that prints out the multiples of 5 that are
 // less than max.
-
 // function printFives(max) {
 //     for (i = 0; i < max; i += 5) {
 //         if (i % 5 === 0) {
@@ -30,13 +29,21 @@
 //         }
 //     }
 // }
-
 // console.log(printFives(20));
 
-function printFives(max) {
-    for (i = 0; i < max; i += 5) {
+// function printFives(max) {
+//     for (i = 0; i < max; i += 5) {
+//         console.log(i)
+//     }
+// }
+// printFives(20);
+
+// Write a function `printReverse(min, max)` that print out all numbers from max
+// to min (exclusive), in reverse order.
+function printReverse(min, max) {
+    for (i = min; i < max; i -= 1) {
         console.log(i)
     }
 }
 
-printFives(20);
+printReverse(5, 19)
