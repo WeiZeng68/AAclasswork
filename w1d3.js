@@ -7,7 +7,7 @@
 //         console.log(i)
 //     }
 // }   
-// logBetween(-1, 2);
+// console.log(logBetween(-1, 2));
 
 
 // Write a function `logBetweenStepper(min, max, step)` that takes in 3 numbers as
@@ -18,7 +18,7 @@
 //         console.log(i)
 //     }
 // }
-// logBetweenStepper(10,20,1)
+// console.log(logBetweenStepper(10,20,1));
 
 // Write a function `printFives(max)` that prints out the multiples of 5 that are
 // less than max.
@@ -36,14 +36,59 @@
 //         console.log(i)
 //     }
 // }
-// printFives(20);
+// console.log(printFives(20));
 
 // Write a function `printReverse(min, max)` that print out all numbers from max
 // to min (exclusive), in reverse order.
-function printReverse(min, max) {
-    for (i = min; i < max; i -= 1) {
-        console.log(i)
+// function printReverse(min, max) {
+//     for (i = max; i > min; i -= 1) {
+//         console.log(i)
+//     }
+// }
+// console.log(printReverse(5, 19));
+
+// Write a function `sumNums(max)` that returns the sum of all positive numbers less
+// than or equal to max.
+
+// function sumNums(max) {
+//     let sum = 0
+//     for (i = 0; i <= max; i++){
+//         sum += i    
+//     }
+//     return sum
+// }
+// console.log(sumNums(5)); 
+
+// Define a function `isFactorOf(number, factor)` that returns `true` if `factor`
+// is a factor of `number`. `false` otherwise. A factor is a number that divides
+// another number without a leftover remainder.
+
+// Define a function `fizzBuzz(max)` that takes a number and prints  every number
+// from 0 to `max` that is divisible by either 3 or 5, but not both.
+// function fizzBuzz(max) {
+//    for (i = 0; i < max; i++) {
+//     if (i % 3 === 0 && i % 5 === 0){
+//         continue;
+//     } else (i % 3 === 0 || i % 5 ===0) {
+//          console.log(i);
+//         }
+//     }
+// }
+// console.log(fizzBuzz(20));
+
+// Define a function `isPrime(number)` that returns `true` if `number` is prime.
+// Otherwise, false. Assume `number` is a positive integer.
+function isPrime(number) {
+    if (number < 2) {
+        return false;
     }
+    for (i = 2; i < number; i++) {
+        if (number % i === 0) {
+            return false;
+        }
+    }
+    return true;
 }
 
-printReverse(5, 19)
+console.log(isPrime(2));
+
