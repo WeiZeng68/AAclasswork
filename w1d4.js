@@ -35,7 +35,6 @@
 
 // console.log(logEach(myPeople));
 
-<<<<<<< HEAD
 // Write a function range(start, end) that returns an array that contains all
 // numbers between 'start' and 'end' in sequential order.
 // function range(start, end) {
@@ -92,45 +91,54 @@
 
 // Write a function `maxValue(array)` that returns the largest value in `array`.
 // Assume `array` is an array of numbers.
-function maxValue(array) {
-    var max = null;
-    for (let i = 0; i < array.length; i += 1) {  //iterate through array
-        var num = array[i];
-        if (num > max || num === null) {    //if num is greater than max or max is not null
-            max = num;      //num becomes the new max 
-        }
-    }
-    return max;
-}
-
-console.log(maxValue([12, 6, 43, 2])); // => 43
-console.log(maxValue([])); // => null
-console.log(maxValue([-4, -10, 0.43])); // => 0.43
-=======
-// Write a function sumArray(array) that takes in an array of numbers that returns the
-// total sum of them.
-// function sumArray(array) {
-//     let sum = 0;
-//     for (let i = 0; i < array.length; i++) {
-//         let num = array[i];
-//         sum += num;
+// function maxValue(array) {
+//     var max = null;
+//     for (let i = 0; i < array.length; i += 1) {  //iterate through array
+//         var num = array[i];
+//         if (num > max || num === null) {    //if num is greater than max or max is not null
+//             max = num;      //num becomes the new max 
+//         }
 //     }
-// return console.log(sum);
+//     return max;
 // }
+// console.log(maxValue([12, 6, 43, 2])); // => 43
+// console.log(maxValue([])); // => null
+// console.log(maxValue([-4, -10, 0.43])); // => 0.43
 
-// sumArray([5, 6, 4]); // => 15
-// sumArray([7, 3, 9, 11]); // => 30
+// Write a function `myIndexOf(array, target)` that takes in an array of
+// numbers and a target number as arguments. It should return the index value
+// of the target if it is present in the array or -1 if it is not present.
+// function myIndexOf(array, target) {
 
+//     for (var i = 0; i < array.length; i++) {    //iterate array
+//       var num = array[i];                       //set new variable num equal to array
+  
+//       if (num === target) {                     
+//         return i;
+//       }
+//     }
+  
+//     return -1;                                  //-1 means does not exist 
+//   }
 
-// Write a function range(start, end) that returns an array that contains all
-// numbers between 'start' and 'end' in sequential order.
-function Range(start, end) {
-    let array = [];
-    for (i = start; i < array.length; i++) {
+// console.log(myIndexOf([1,2,3,4],4));
+// console.log(myIndexOf([5,6,7,8],2));
+
+// Write a function `factorArray(array, number)` that takes in an array of
+// numbers and a number and returns an array of all the factors.
+function factorArray(array, number) {
+    var factors = [];
+  
+    for (var i = 0; i < array.length; i++) {
+      var num = array[i];
+  
+      if (number % num === 0) {
+        factors.push(num);
+      }
     }
-    return array[i];
-}
-
-console.log(Range(1,4));
-console.log(Range(4,2));
->>>>>>> f0d52cdf85cdf58ed422b4522c115d9b470c33e9
+  
+    return factors;
+  }
+console.log(factorArray([2,3,4,5,6],20));
+console.log(factorArray([2,3,4,5,6],35));
+console.log(factorArray([10,15,20,25],5)); 
