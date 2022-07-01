@@ -35,6 +35,7 @@
 
 // console.log(logEach(myPeople));
 
+<<<<<<< HEAD
 // Write a function range(start, end) that returns an array that contains all
 // numbers between 'start' and 'end' in sequential order.
 // function range(start, end) {
@@ -105,3 +106,31 @@ function maxValue(array) {
 console.log(maxValue([12, 6, 43, 2])); // => 43
 console.log(maxValue([])); // => null
 console.log(maxValue([-4, -10, 0.43])); // => 0.43
+=======
+// Write a function sumArray(array) that takes in an array of numbers that returns the
+// total sum of them.
+// function sumArray(array) {
+//     let sum = 0;
+//     for (let i = 0; i < array.length; i++) {
+//         let num = array[i];
+//         sum += num;
+//     }
+// return console.log(sum);
+// }
+
+// sumArray([5, 6, 4]); // => 15
+// sumArray([7, 3, 9, 11]); // => 30
+
+
+// Write a function range(start, end) that returns an array that contains all
+// numbers between 'start' and 'end' in sequential order.
+function Range(start, end) {
+    let array = [];
+    for (i = start; i < array.length; i++) {
+    }
+    return array[i];
+}
+
+console.log(Range(1,4));
+console.log(Range(4,2));
+>>>>>>> f0d52cdf85cdf58ed422b4522c115d9b470c33e9
