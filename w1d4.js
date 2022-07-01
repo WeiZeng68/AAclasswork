@@ -117,28 +117,59 @@
 //         return i;
 //       }
 //     }
-  
 //     return -1;                                  //-1 means does not exist 
 //   }
-
 // console.log(myIndexOf([1,2,3,4],4));
 // console.log(myIndexOf([5,6,7,8],2));
 
 // Write a function `factorArray(array, number)` that takes in an array of
 // numbers and a number and returns an array of all the factors.
-function factorArray(array, number) {
-    var factors = [];
+// function factorArray(array, number) {
+//     var factors = [];                             //sets the array 
   
-    for (var i = 0; i < array.length; i++) {
-      var num = array[i];
+//     for (var i = 0; i < array.length; i++) {      //basic iteration 
+//       var num = array[i];                         //sets new variable num to array 
   
-      if (number % num === 0) {
-        factors.push(num);
-      }
+//       if (number % num === 0) {   //if number % 0 is = 0 which means no remainders, its a factor
+//         factors.push(num);        //push the factor into our result array 
+//       }
+//     }
+  
+//     return factors;              //returns result array 
+//   }
+// console.log(factorArray([2,3,4,5,6],20));
+// console.log(factorArray([2,3,4,5,6],35));
+// console.log(factorArray([10,15,20,25],5)); 
+
+//Write a function tripler(array) that takes in an array and returns a new array
+//containing 3 times every element of the original array.
+// function tripler(array) {
+//     let tripleResults = [];              //set new array 
+    
+//     for (let i = 0; i < array.length; i++) {       //iterate the array 
+//         let num = array[i];          //new variable to store the array 
+//         let multiple = num * 3      //new variable to multiply the stored arrays variable
+//         tripleResults.push(multiple); //push the multiple results into our tripleResults array    
+
+//     }
+//     return tripleResults
+// }
+
+// console.log(tripler([1,2,3]));
+// console.log(tripler([4, 1, 7]));
+
+//Write a function oddRange(end) that takes in a number and returns an array containing
+//all positive odd numbers up to `end`.
+function oddRange(end) {
+    let array = []
+    for (let i = 0; i <= end.length; i++) {
+        let odds = array[i];
+        if (end % odds !== 0) {
+        array.push(odds)
+        }
     }
-  
-    return factors;
-  }
-console.log(factorArray([2,3,4,5,6],20));
-console.log(factorArray([2,3,4,5,6],35));
-console.log(factorArray([10,15,20,25],5)); 
+    return array
+}
+
+console.log(oddRange(13)); // => [ 1, 3, 5, 7, 9, 11, 13 ]
+console.log(oddRange(6)); // => [ 1, 3, 5 ]
