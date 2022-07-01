@@ -13,7 +13,7 @@
 //         console.log(arr[i]);
 //     }
 // }
-let myPeople = ['Volkanovski', 'Adesanya', 'Cannonier', 'Holloway'];
+// let myPeople = ['Volkanovski', 'Adesanya', 'Cannonier', 'Holloway'];
 // console.log(printArray(myPeople));
 
 //function to print array in reverse
@@ -27,10 +27,81 @@ let myPeople = ['Volkanovski', 'Adesanya', 'Cannonier', 'Holloway'];
 
 // Write a function `logEach(array)` that prints every element of the array and its
 // index to the console.
-function logEach(array) {
-    for (let i = 0; i < array.length; i++) {
-        console.log('index: ' + i + ' element: ' + array[i]);
+// function logEach(array) {
+//     for (let i = 0; i < array.length; i++) {
+//         console.log('index: ' + i + ' element: ' + array[i]);
+//     }
+// }
+
+// console.log(logEach(myPeople));
+
+// Write a function range(start, end) that returns an array that contains all
+// numbers between 'start' and 'end' in sequential order.
+// function range(start, end) {
+//     let array = []
+//     for (let i = start; i <= end; i++) {
+//         array.push(i)
+//     }
+//     return array;
+// }
+
+// console.log(range(1, 5));
+
+// Write a function sumArray(array) that takes in an array of numbers that returns the
+// total sum of them.
+// function sumArray(array) {
+//     let sum = 0; 
+//     for (let i = 0; i < array.length; i++) {
+//         var num = array[i];
+//         sum += num;
+//     }
+//     return sum;
+// }
+
+// console.log(sumArray([5, 6, 4]));
+// console.log(sumArray([7, 3, 9, 11]));
+
+// Write a function `capWords(words)` that takes in an array of words and
+// returns a new array where every word is capitalized.
+// function capWords(words) {
+//     let newWords = []
+//     for (let i = 0; i < words.length; i++) {   //creates iteration
+//         var word = words[i];    //stores the iteration to var word
+//         var newWord = word.toUpperCase();   //makes the iteration uppercase
+//         newWords.push(newWord);  //push caps iteration to newWords 
+//     }
+//     return newWords;
+// }
+
+// console.log(capWords(['hello', 'boOtCaMp', 'PREP!'])); // => ['HELLO', 'BOOTCAMP', 'PREP!']
+
+// Write a function `wordPeriods(sentence)` that takes in a sentence and returns a new
+// sentence where every word has period after it.
+// function wordPeriods(sentence) {
+//     let newSentence = sentence.split(' ');  //splits the sentence 
+//     for (let i = 0; i < newSentence.length; i++) {   //iterate to new stence
+//         let word = newSentence[i];    //place iteration in variable word
+//         newSentence[i] = word + '.'    //concatenate 
+//     }
+//     let finalSentence = newSentence.join(' ');  
+//     return finalSentence;  
+// }
+// console.log(wordPeriods('hello world')); // => 'hello. world.'
+// console.log(wordPeriods('what is the weather today')); // => 'what. is. the. weather. today.'
+
+// Write a function `maxValue(array)` that returns the largest value in `array`.
+// Assume `array` is an array of numbers.
+function maxValue(array) {
+    var max = null;
+    for (let i = 0; i < array.length; i += 1) {  //iterate through array
+        var num = array[i];
+        if (num > max || num === null) {    //if num is greater than max or max is not null
+            max = num;      //num becomes the new max 
+        }
     }
+    return max;
 }
 
-console.log(logEach(myPeople));
+console.log(maxValue([12, 6, 43, 2])); // => 43
+console.log(maxValue([])); // => null
+console.log(maxValue([-4, -10, 0.43])); // => 0.43
