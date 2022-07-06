@@ -16,7 +16,7 @@
 // let myPeople = ['Volkanovski', 'Adesanya', 'Cannonier', 'Holloway'];
 // console.log(printArray(myPeople));
 
-//function to print array in reverse
+// function to print array in reverse
 //     function printArrayReverse(arr) {
 //         for (let i = arr.length - 1; i >= 0; i--) {
 //             console.log(arr[i])
@@ -52,12 +52,22 @@
 
 // Write a function range(start, end) that returns an array that contains all
 // numbers between 'start' and 'end' in sequential order.
-function Range(start, end) {
-    let array = [];
-    for (i = start; i < array.length; i++) {
-    }
-    return array[i];
-}
+// function Range(start, end) {
+//     let array = [];
+//     for (i = start; i < array.length; i++) {
+//     }
+//     return array[i];
+// }
 
-console.log(Range(1,4));
-console.log(Range(4,2));
+// console.log(Range(1,4));
+// console.log(Range(4,2));
+
+// Write a function `capWords(words)` that takes in an array of words and
+// returns a new array where every word is capitalized.
+
+function capWords(words) {
+    let array = []
+    for (i = 0; i < array.length; i++) {
+        array.toUpperCase
+    }
+}
