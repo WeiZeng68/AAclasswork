@@ -43,14 +43,33 @@
 
 // printArr(array1)
 
-let names = ['wei','justin','jimmy']
+// let names = ['wei','justin','jimmy','jonathan']
 
-function pairNames(array) {
-    for (let i = 0; i < names.length; i++) {
-      for (let j = i + 1; j < names.length; j++) { 
-         console.log(names[i], names[j])
+// function pairNames(array) {
+//     for (let i = 0; i < names.length; i++) {
+//       for (let j = i + 1; j < names.length; j++) { 
+//          console.log(names[i], names[j])
+//         }
+//     }
+// }
+
+// pairNames(names)
+
+function pairZero(array) {
+    let pairs = [];
+    
+    for (let i = 0; i < array.length; i++) {
+        for (let j = i + 1; j < array.length; j++) {
+            let num1 = array[i];
+            let num2 = array[j];
+            if (num1 + num2 === 0) {
+            pairs.push([num1, num2])
+            }
         }
     }
+    return pairs;
 }
 
-pairNames(names)
+let numbers = [0, 2, 5, -2, -7, 7];
+
+console.log(pairZero(numbers));
