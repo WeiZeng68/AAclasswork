@@ -24,21 +24,33 @@
 
 // console.log(dog1.speak('wei'));
 
-console.log([0,1,2,"something"][3])
+// console.log([0,1,2,"something"][3])
 
-let array1 = [
-    ['a','b','c'],
-    ['d','e','f'],
-    ['g','h']
-]
+// let array1 = [
+//     ['a','b','c'],
+//     ['d','e','f'],
+//     ['g','h']
+// ]
 
 
-function printArr(array) {
-    for (let i = 0; i < array.length; i++) {
-        for (let j = 0; j < array[i].length; j++) {
-            console.log(array[i][j])
+// function printArr(array) {
+//     for (let i = 0; i < array.length; i++) {
+//         for (let j = 0; j < array[i].length; j++) {
+//             console.log(array[i][j])
+//         }
+//     }
+// }
+
+// printArr(array1)
+
+let names = ['wei','justin','jimmy']
+
+function pairNames(array) {
+    for (let i = 0; i < names.length; i++) {
+      for (let j = i + 1; j < names.length; j++) { 
+         console.log(names[i], names[j])
         }
     }
 }
 
-printArr(array1)
+pairNames(names)
