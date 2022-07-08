@@ -16,7 +16,7 @@
 // let myPeople = ['Volkanovski', 'Adesanya', 'Cannonier', 'Holloway'];
 // console.log(printArray(myPeople));
 
-//function to print array in reverse
+// function to print array in reverse
 //     function printArrayReverse(arr) {
 //         for (let i = arr.length - 1; i >= 0; i--) {
 //             console.log(arr[i])
@@ -73,6 +73,29 @@ console.log(logEach(myPeople));
 //     return newWords;
 // }
 
+<<<<<<< HEAD
+// Write a function range(start, end) that returns an array that contains all
+// numbers between 'start' and 'end' in sequential order.
+// function Range(start, end) {
+//     let array = [];
+//     for (i = start; i < array.length; i++) {
+//     }
+//     return array[i];
+// }
+
+// console.log(Range(1,4));
+// console.log(Range(4,2));
+
+// Write a function `capWords(words)` that takes in an array of words and
+// returns a new array where every word is capitalized.
+
+function capWords(words) {
+    let array = []
+    for (i = 0; i < array.length; i++) {
+        array.toUpperCase
+    }
+}
+=======
 // console.log(capWords(['hello', 'boOtCaMp', 'PREP!'])); // => ['HELLO', 'BOOTCAMP', 'PREP!']
 
 // Write a function `wordPeriods(sentence)` that takes in a sentence and returns a new
@@ -169,5 +192,11 @@ function maxValue(array) {
 // }
       
 
+<<<<<<< HEAD
 // console.log(oddRange(13)); // => [ 1, 3, 5, 7, 9, 11, 13 ]
 // console.log(oddRange(6)); // => [ 1, 3, 5 ]
+=======
+console.log(oddRange(13)); // => [ 1, 3, 5, 7, 9, 11, 13 ]
+console.log(oddRange(6)); // => [ 1, 3, 5 ]
+>>>>>>> 90c7be1fb8d4c5721c828280564a514de7f1f000
+>>>>>>> a2705d30dc0ff4184d180abb5a58f6d3eea685cc
