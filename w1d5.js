@@ -164,19 +164,40 @@
 // Write a function evenCaps(sentence) that takes in a sentence as an
 // argument and returns the same string with each even index being
 // capitalized. Index 0 counts as even.
-function evenCaps(sentence) {
-    let words = (' ');
-    for (let i = 0; i < sentence.length; i++) {
-        let word = sentence[i];
-        if (i % 2 === 0) {
-        let capitalWord = word.toUpperCase();
-        words += capitalWord;
-        }
-        else {
-        words += word;
-        }
-    }
-return words
-}
+// function evenCaps(sentence) {
+//     let words = (' ');
+//     for (let i = 0; i < sentence.length; i++) {   //need to iterate through entire sentence 
+//         let word = sentence[i];                  //store iteration in variable word 
+//         if (i % 2 === 0) {                     //if word index is even
+//         let capitalWord = word.toUpperCase();    //we capitalize 
+//         words += capitalWord;                   //add to original words variable
+//         }
+//         else {
+//         words += word;                       //else we still add it not capitalized 
+//         }
+//     }
+// return words
+// }
 
-console.log(evenCaps("the book is in front of the table"));
+// console.log(evenCaps("the book is in front of the table"));
+
+
+// Write a function `arraySubstring(words, str)` that takes in an array of
+// strings and a string as arguments and returns an array where each element is
+// replaced with true if the string is a substring of the element and false if
+// it is not.
+// function arraySubstring(words, str) {
+//     var arr = [];    //set array 
+  
+//     for (var i = 0; i < words.length; i++) {     //iterate words 
+//       var word = words[i];                 //store words in variable word 
+  
+//       if (word.indexOf(str) !== -1) {     //if word is inside string
+//         arr.push(true);                  //push true to array 
+//       } else {
+//         arr.push(false);               //otherwise push false to array 
+//       }
+//     }
+  
+//     return arr;
+//   }

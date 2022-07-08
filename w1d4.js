@@ -27,13 +27,13 @@
 
 // Write a function `logEach(array)` that prints every element of the array and its
 // index to the console.
-// function logEach(array) {
-//     for (let i = 0; i < array.length; i++) {
-//         console.log('index: ' + i + ' element: ' + array[i]);
-//     }
-// }
+function logEach(array) {
+    for (let i = 0; i < array.length; i++) {
+    console.log(i + ': '  +  array[i])
+    }
+}
 
-// console.log(logEach(myPeople));
+console.log(logEach(myPeople));
 
 // Write a function range(start, end) that returns an array that contains all
 // numbers between 'start' and 'end' in sequential order.
@@ -77,30 +77,30 @@
 
 // Write a function `wordPeriods(sentence)` that takes in a sentence and returns a new
 // sentence where every word has period after it.
-// function wordPeriods(sentence) {
-//     let newSentence = sentence.split(' ');  //splits the sentence 
-//     for (let i = 0; i < newSentence.length; i++) {   //iterate to new stence
-//         let word = newSentence[i];    //place iteration in variable word
-//         newSentence[i] = word + '.'    //concatenate 
-//     }
-//     let finalSentence = newSentence.join(' ');  
-//     return finalSentence;  
-// }
-// console.log(wordPeriods('hello world')); // => 'hello. world.'
-// console.log(wordPeriods('what is the weather today')); // => 'what. is. the. weather. today.'
+function wordPeriods(sentence) {
+    let newSentence = sentence.split(' ');  //splits the sentence 
+    for (let i = 0; i < newSentence.length; i++) {   //iterate to new stence
+        let word = newSentence[i];    //place iteration in variable word
+        newSentence[i] = word + '.'    //concatenate 
+    }
+    let finalSentence = newSentence.join(' ');  
+    return finalSentence;  
+}
+console.log(wordPeriods('hello world')); // => 'hello. world.'
+console.log(wordPeriods('what is the weather today')); // => 'what. is. the. weather. today.'
 
 // Write a function `maxValue(array)` that returns the largest value in `array`.
 // Assume `array` is an array of numbers.
-// function maxValue(array) {
-//     var max = null;
-//     for (let i = 0; i < array.length; i += 1) {  //iterate through array
-//         var num = array[i];
-//         if (num > max || num === null) {    //if num is greater than max or max is not null
-//             max = num;      //num becomes the new max 
-//         }
-//     }
-//     return max;
-// }
+function maxValue(array) {
+    var max = null;
+    for (let i = 0; i < array.length; i += 1) {  //iterate through array
+        var num = array[i];
+        if (num > max || num === null) {    //if num is greater than max or max is not null
+            max = num;      //num becomes the new max 
+        }
+    }
+    return max;
+}
 // console.log(maxValue([12, 6, 43, 2])); // => 43
 // console.log(maxValue([])); // => null
 // console.log(maxValue([-4, -10, 0.43])); // => 0.43
@@ -145,7 +145,6 @@
 //containing 3 times every element of the original array.
 // function tripler(array) {
 //     let tripleResults = [];              //set new array 
-    
 //     for (let i = 0; i < array.length; i++) {       //iterate the array 
 //         let num = array[i];          //new variable to store the array 
 //         let multiple = num * 3      //new variable to multiply the stored arrays variable
@@ -160,16 +159,15 @@
 
 //Write a function oddRange(end) that takes in a number and returns an array containing
 //all positive odd numbers up to `end`.
-function oddRange(end) {
-    let array = []
-    for (let i = 0; i <= end.length; i++) {
-        let odds = array[i];
-        if (end % odds !== 0) {
-        array.push(odds)
-        }
-    }
-    return array
-}
+// function oddRange(end) {
+//     var arr = [];         //set array 
+//     for (var i = 1; i <= end; i += 2) {  //starts at 1, incrementors of 2 to get odds 
+//         arr.push(i);
+//     }
+      
+//     return arr;
+// }
+      
 
-console.log(oddRange(13)); // => [ 1, 3, 5, 7, 9, 11, 13 ]
-console.log(oddRange(6)); // => [ 1, 3, 5 ]
+// console.log(oddRange(13)); // => [ 1, 3, 5, 7, 9, 11, 13 ]
+// console.log(oddRange(6)); // => [ 1, 3, 5 ]

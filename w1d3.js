@@ -78,16 +78,16 @@
 
 // Define a function `isPrime(number)` that returns `true` if `number` is prime.
 // Otherwise, false. Assume `number` is a positive integer.
-function isPrime(number) {
-    if (number < 2) {
+function isPrime(number) {              
+    if (number < 2) {             //1 is automaticcally false, not prime so we set that first 
         return false;
     }
-    for (i = 2; i < number; i++) {
-        if (number % i === 0) {
-            return false;
+    for (i = 2; i < number; i++) {     //basic for loop iteration 
+        if (number % i === 0) {    //if num % i = 0 which means no remainder, it is not a prime
+            return false;         //therefore return false
         }
     }
-    return true;
+    return true;             //we want our other return statement to be outside for loop
 }
 
 console.log(isPrime(2));
