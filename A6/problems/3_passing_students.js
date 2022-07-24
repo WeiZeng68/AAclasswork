@@ -26,18 +26,22 @@ var students = [
 passingStudents(students); // => [ 'Kush', 'Ned' ]
 *******************************************************************************/
 
+function getAvg(grades) {
+  let sum = 0;
+
+  for (let i = 0; i < grades.length; i++) {
+    sum += grades[i].score
+  }
+  return sum / grades.length; 
+}
+
 function passingStudents(students) {
   let passingStudents = [];
-  let scoreSum = 0;
 
   for (let i = 0; i < students.length; i++) {
-    for (let key in students) {
-      let student = students[key];
-      scoreSum += student.score;
-      let avg = scoreSum / student.grades.length;
-      if (avg >= 70) {
-        passingStudents.push(student.name)
-      }
+    let student = students[i]
+    if (getAvg(student.grades) >= 70) {
+      passingStudents.push(student.name)
     }
   }
   return passingStudents;
